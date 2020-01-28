@@ -4,14 +4,14 @@ A repo containing Files, kests, etc for installing OSx on  Asus X542UQ
 Note that this is a personal Repo for myself to remember how to install back OSx on my Laptop at the future.
 
 ## Hardware:
-Asus X542UQ
-BIOS Version: 
-Intel Core-i5 7200u (Kabylake)
-8GB RAM
-Intel HD 620 Gpu + Nvidia 940mx (nvidia will be disabled using config.plist file as OSx doesn't support it)
-Atheros AR9565 WIFI
-Elan1200 Touchpad
-ALC294 Audio Codec
+- Asus X542UQ
+- BIOS Version: 
+- Intel Core-i5 7200u (Kabylake)
+- 8GB RAM
+- Intel HD 620 Gpu + Nvidia 940mx (nvidia will be disabled using config.plist file as OSx doesn't support it)
+- Atheros AR9565 WIFI
+- Elan1200 Touchpad
+- ALC294 Audio Codec
 
 ## Clover
 
@@ -73,3 +73,10 @@ Please note that non of this tools and kexts are from me. I'm just a guy who tes
  - **Rehabman** for his great work and providing most of the tools and Kexts used to install OSx on not Apple Hardware.
 - https://tonymacx86.com for providing the guides, tools and support to successfully install OSx.
 - Other developer that their tools used and mentioned here.
+
+
+
+
+
+
+
