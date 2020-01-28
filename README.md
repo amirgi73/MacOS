@@ -44,7 +44,9 @@ https://github.com/hieplpvip/AsusSMC
 due to Asus' buggy implementations of GPIO, touchpad in GPIO mode whould lag and is not usable (at least with the current BIOS version: ) so you have to use interrupt mode with does not need any DSDT patches. Just install the VoodooI2C and VoodooI2CHID kexts in L/E
 
 # Wifi
-AR9565 is not supported in Mojave. currently the noly way is to replace the native IO80211Family.kext with the patched one provided in the Wifi folder. Remove the original IO80211Family.kext from /S/L/E then install the patched one in /S/L/E with the Kextbeast tool. then install ATH9KInjector.kext and ATH9Fixup.kext with the Hackingtool (Hakingtool will repair permissions and will regenerate kext cache). then you need to add -ath9565 as boot aurgument to clover.
+AR9565 is not supported in Mojave. currently the only way is to replace the native IO80211Family.kext with the patched one provided in the Wifi folder. backup the original kext from /S/L/E (simply use cp -R command to copy it somewhere else) then remove the IO80211Family.kext from /S/L/E and install the patched one in /S/L/E with the Kextbeast tool. Now install ATH9KInjector.kext and ATH9Fixup.kext with the Hackingtool (Hakingtool will repair permissions and will regenerate kext cache). Finally you need to add -ath9565 as boot aurgument to clover.
+
+The original IO80211Family.kext from Mojave is also in the wifi folder if you need to install back the original one.
 
 
 
