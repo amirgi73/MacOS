@@ -26,7 +26,7 @@ Do not forgot the `VoodooTSCSync.kext`. Without it the installer may stuck at bo
 ## Audio
 https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/
 
-Use **AppleAlc Kext** with a code generated from [Hackingtool](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Hacktool) for `Layout ID 12`. Place the code from Hackingtool to the Devices > Properties in the `config.plist` file from clover. Note that in the `config.plist` file Devices > Audio there should be a key named Inject with a **string** value = `NO`.
+Use **AppleAlc Kext** with a code generated from [Hackingtool](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Hacktool) for `Layout ID 12`(`Spoof Audio Device ID` in Hackingtool should be unchecked). Place the code from Hackingtool to the Devices > Properties in the `config.plist` file from clover. Note that in the `config.plist` file Devices > Audio there should be a key named Inject with a **string** value = `NO`.
 (with audio layout 12 the audio jack and Speakers function normally, although the microphone doesn't work, and the HDMI audio is not tested.)
 The laptop uses `Alc294` Codec.
 
