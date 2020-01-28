@@ -60,7 +60,7 @@ IF you want to test the Interrupt Mode > use the ACPI name `ETPD` and GPIO pin h
 ## Wifi
 AR9565 is not supported in Mojave. Currently the only way is to **replace the native IO80211Family.kext with the patched one** provided in the Wifi folder in this repo. backup the original kext from /S/L/E (simply use cp -R command to copy it somewhere else)
 
-    cp -R /System/Library/Extensions/IO80211Family.kext ~/Desktop
+    cp -R /System/Library/Extensions/IO80211Family.kext ~/Desktop/
 
 then remove the IO80211Family.kext from /S/L/E
 
