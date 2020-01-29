@@ -66,7 +66,7 @@ then remove the IO80211Family.kext from /S/L/E
 
     sudo rm -Rf /System/Library/Extensions/IO80211Family.kext
 
-and install the patched one in /S/L/E with the Kextbeast tool. Now install `ATH9KInjector.kext` and `ATH9Fixup.kext` using Hackingtool. (Hackingtool will repair permissions and will regenerate kext cache). Finally you need to add `-ath9565` as boot aurgument to clover.
+and install the patched one in /S/L/E with the Kextbeast tool. Now install `ATH9KInjector.kext` and `ATH9Fixup.kext` using Hackingtool. (Hackingtool will repair permissions and will regenerate kext cache). Finally you need to add  `-ath9565` as boot aurgument to clover.
 
 ## Acknowledgments:
 Please note that non of this tools and kexts are from me. I'm just a guy who tested them and collected them here for my personal future reference.
