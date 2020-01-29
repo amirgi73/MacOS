@@ -72,7 +72,7 @@ and install the patched one in /S/L/E with the Kextbeast tool. Now install `ATH9
 Please note that non of this tools and kexts are from me. I'm just a guy who tested them and collected them here for my personal future reference.
  - **Rehabman** for his great work and providing most of the tools and Kexts used to install OSx on not Apple Hardware.
 - https://tonymacx86.com for providing the guides, tools and support to successfully install OSx.
-- Other developer that their tools used and mentioned here.
+- Other developers that their tools used and mentioned here.
 
 
 
