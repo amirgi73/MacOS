@@ -5,7 +5,7 @@ Note that this is a personal Repo for myself to remember how to install back OSx
 
 ## Hardware:
 - Asus X542UQ
-- BIOS Version: 
+- BIOS Version: 309
 - Intel Core-i5 7200u (Kabylake)
 - 8GB RAM
 - Intel HD 620 Gpu + Nvidia 940mx (nvidia will be disabled using config.plist file as OSx doesn't support it)
@@ -54,7 +54,7 @@ Apply this patches:
 ***[NOTE]*** The Patched `DSDT.dsl` file is provided in this repo and is for my own personal use. Every System will have different DSDT and SSDTs and my file **probably never works on any other system**, even if you have the exact model and Hardware as me. Use the linked guide above to learn how to patch your own DSDT and SSDTs.
 
 ## Touchpad
-Due to Asus' buggy implementations of GPIO, touchpad in GPIO mode whould lag and is not usable (at least with the current BIOS version: ) so you have to use **Pulling Mode** which does not need any DSDT patches. Just install the `VoodooI2C.kext` and `VoodooI2CHID.kext` in `Library/Extension`.
+Due to Asus' buggy implementations of GPIO, touchpad in GPIO mode whould lag and is not usable (at least with the current BIOS version: 309) so you have to use **Pulling Mode** which does not need any DSDT patches. Just install the `VoodooI2C.kext` and `VoodooI2CHID.kext` in `Library/Extension`.
 IF you want to test the Interrupt Mode > use the ACPI name `ETPD` and GPIO pin hex: `0x34` (this is for my own reference only. for your system the pin number and even ACPI name may be different. Check [VoodooI2C wiki](https://voodooi2c.github.io/#Installation/Installation) for guides on how to use Interrupt Mode and finding your system's GPIO pin number and hex.)
 
 ## Wifi
