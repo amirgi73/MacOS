@@ -53,6 +53,22 @@ Apply this patches:
 
 ***[NOTE]*** The Patched `DSDT.dsl` file is provided in this repo and is for my own personal use. Every System will have different DSDT and SSDTs and my file **probably never works on any other system**, even if you have the exact model and Hardware as me. Use the linked guide above to learn how to patch your own DSDT and SSDTs.
 
+***[NOTE]*** The patches in Asus Repository dosn't work. for fixing Brightness keys use this patch INSTED:
+(more informations here [on section: Brightness Keys]: https://www.tonymacx86.com/threads/guide-patching-dsdt-ssdt-for-laptop-backlight-control.152659/)
+
+    into method label _Q0E replace_content
+    begin
+    // Brightness Down\n
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x0405)\n
+    end;
+    into method label _Q0F replace_content
+    begin
+    // Brightness Up\n
+        Notify(\_SB.PCI0.LPCB.PS2K, 0x0406)\n
+    end;
+
+    
+    
 ## Touchpad
 Due to Asus' buggy implementations of GPIO, touchpad in GPIO mode whould lag and is not usable (at least with the current BIOS version: 309) so you have to use **Pulling Mode** which does not need any DSDT patches. Just install the `VoodooI2C.kext` and `VoodooI2CHID.kext` in `Library/Extension`.
 IF you want to test the Interrupt Mode > use the ACPI name `ETPD` and GPIO pin hex: `0x34` (this is for my own reference only. for your system the pin number and even ACPI name may be different. Check [VoodooI2C wiki](https://voodooi2c.github.io/#Installation/Installation) for guides on how to use Interrupt Mode and finding your system's GPIO pin number and hex.)
