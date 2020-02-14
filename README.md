@@ -26,9 +26,12 @@ Do not forgot the `VoodooTSCSync.kext`. Without it the installer may stuck at bo
 ## Audio
 https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/
 
-Use **AppleAlc Kext** with a code generated from [Hackingtool](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Hacktool) for `Layout ID 12`(`Spoof Audio Device ID` in Hackingtool should be unchecked). Place the code from Hackingtool to the Devices > Properties in the `config.plist` file from clover. Note that in the `config.plist` file Devices > Audio there should be a key named `Inject` with a **string** value = `NO`.
-(with audio layout 12 the audio jack and Speakers function normally, although the microphone doesn't work, and the HDMI audio is not tested.)
+Use **AppleAlc Kext** with a code generated from [Hackingtool](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Hacktool) for `Layout ID 11`(`Spoof Audio Device ID` in Hackingtool should be unchecked). Place the code from Hackingtool to the Devices > Properties in the `config.plist` file from clover. Note that in the `config.plist` file Devices > Audio there should be a key named `Inject` with a **string** value = `NO`.
+(with audio layout 11 Speakers and Microphone function normally, although the AudioJack doesn't work, and the HDMI audio is not tested.)
 The laptop uses `Alc294` Codec.
+to make the AudioJack work, you have to follow this guide: https://www.olarila.com/topic/5586-guide-how-to-activate-microphone-on-conexant-codecs-and-others/
+ - install CodecComander.kext from https://github.com/RehabMan/EAPD-Codec-Commander
+ - download Jackfix from the repo, put the folder on Desktop and run the `install.command` file
 
 ## Graphics
 You need `VoodooTSCSync.kext`, `Lilu.kext` and `WhateverGreen.kext`. Without VoodooTSCSync.kext you wouldn't be able to boot or get very annoying graphic distortions.
