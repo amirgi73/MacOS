@@ -1,6 +1,6 @@
 
 # MacOS
-A repo containing Files, kests, etc for installing OSx on  Asus X542UQ.
+A repo containing Files, kests, etc for installing OSx on  Asus X542UQR.
 Note that this is a personal Repo for myself to remember how to install back OSx on my Laptop at the future.
 
 ## Hardware:
