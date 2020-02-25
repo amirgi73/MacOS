@@ -1,5 +1,5 @@
 
-# MacOS
+# MacOS - Mojave
 A repo containing Files, kests, etc for installing OSx on  Asus X542UQR.
 Note that this is a personal Repo for myself to remember how to install back OSx on my Laptop at the future.
 
@@ -76,7 +76,7 @@ Apply this patches:
 Due to Asus' buggy implementations of GPIO, touchpad in GPIO mode whould lag and is not usable (at least with the current BIOS version: 309) so you have to use **Pulling Mode** which does not need any DSDT patches. Just install the `VoodooI2C.kext` and `VoodooI2CHID.kext` in `Library/Extension`.
 IF you want to test the Interrupt Mode > use the ACPI name `ETPD` and GPIO pin hex: `0x34` (this is for my own reference only. for your system the pin number and even ACPI name may be different. Check [VoodooI2C wiki](https://voodooi2c.github.io/#Installation/Installation) for guides on how to use Interrupt Mode and finding your system's GPIO pin number and hex.)
 
-## Wifi
+## Wifi - Mojave
 AR9565 is not supported in Mojave. Currently the only way is to **replace the native IO80211Family.kext with the patched one** provided in the Wifi folder in this repo. backup the original kext from /S/L/E (simply use cp -R command to copy it somewhere else)
 
     cp -R /System/Library/Extensions/IO80211Family.kext ~/Desktop/
@@ -84,13 +84,37 @@ AR9565 is not supported in Mojave. Currently the only way is to **replace the na
 then remove the IO80211Family.kext from /S/L/E
 
     sudo rm -Rf /System/Library/Extensions/IO80211Family.kext
+    
 
 and install the patched one in /S/L/E with the Kextbeast tool. Now install `ATH9KInjector.kext` and `ATH9Fixup.kext` using Hackingtool. (Hackingtool will repair permissions and will regenerate kext cache). Finally you need to add  `-ath9565` as boot aurgument to clover.
+
+## Wifi - Catalina
+The method mentioned above won't work on Catalina!
+
+Backup the Original kexts:
+
+    cp -R /System/Library/Extensions/IO80211Family.kext ~/Desktop/
+    cp -R /System/Library/Extensions/IO80211FamilyV2.kext ~/Desktop/
+    cp -R /System/Library/Extensions/corecapture.kext ~/Desktop/
+    
+Remove the original kexts from S/L/E:
+
+    sudo rm -Rf /System/Library/Extensions/IO80211Family.kext
+    sudo rm -Rf /System/Library/Extensions/IO80211FamilyV2.kext
+    sudo rm -Rf /System/Library/Extensions/corecapture.kext
+    
+Install patched kexts from Wifi-Catalina folder to `S/L/E` using Hackingtool: `IO80211Family.kext`, `corecapture.kext`, `CoreCaptureResponder.kext`
+
+Install `ATH9KFixup.kext`, `ATH9KInjector.kext` to `L/E` using Hackingtool.
+
+Add `-ath9565` as boot aurgument to Clover's `config.plist` file.
 
 ## USB POWER
 guide: https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra-and-later.222266/post-1728645
 in CLover config.plist go to DSDT > Patches > enable EC0 to EC rename
 then copy `SSDT-XCPM.aml` to /EFI/CLOVER/ACPI/patched
+
+
 
 ## Acknowledgments:
 Please note that non of this tools and kexts are from me. I'm just a guy who tested them and collected them here for my personal future reference.
