@@ -28,6 +28,7 @@ This config has been updated to use OpenCore as Clover is dead.
  -  **App Store** 
  -  **Hardware Accelerated Video decoding** 
  -  **Battery status**
+ -  **NVRAM**
 
 ## Not Working/ Not tested
 
