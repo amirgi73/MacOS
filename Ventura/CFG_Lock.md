@@ -1,5 +1,5 @@
 # Unlocking CFG_Lock in BIOS_V: 311
-In eft shell (modified grub shell) run:
+In efi shell (modified grub shell) run:
 
 `setup_var_cv Setup 0x527 0x01 0x00`
 
