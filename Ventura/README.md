@@ -12,6 +12,8 @@ This config has been updated to use OpenCore as Clover is dead.
  - config_debug.plist (same as finished but boot and OpenCore logs are enabled)
  - config_copy.plist (with **cfglock kernel patch** + Boot and OpenCore **logs** + **no USB port map** + no ACPI brightness) ideal for a usb_installer
 
+### EFI.zip Direct Download Link:
+`https://github.com/amirgi73/MacOS/raw/master/Ventura/EFI.zip`
 ## Guides:
 [Dortania](https://dortania.github.io/getting-started/) for installing OpenCore as Well as almost all of required Hacks and Patches
 
