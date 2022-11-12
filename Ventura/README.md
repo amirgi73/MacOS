@@ -3,7 +3,7 @@
 Bios Version: **311**
 Wifi+BT: Intel AC8260 - 8260NGW
 
-![Screenshot](Bildschirm foto 2022-11-13 um 01.59.50.png)
+![Screenshot](https://github.com/amirgi73/MacOS/blob/master/Ventura/Bildschirm%C2%ADfoto%202022-11-13%20um%2001.59.50.png)
 
 This config has been updated to use OpenCore as Clover is dead.
 
