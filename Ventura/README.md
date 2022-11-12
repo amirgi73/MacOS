@@ -3,6 +3,8 @@
 Bios Version: **311**
 Wifi+BT: Intel AC8260 - 8260NGW
 
+![Screenshot](Bildschirm foto 2022-11-13 um 01.59.50.png)
+
 This config has been updated to use OpenCore as Clover is dead.
 
 > There are 3 Config files in EFI Folder:
