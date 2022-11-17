@@ -1,3 +1,4 @@
+
 # Ventura (13.0) on X541UQ
 
 Bios Version: **311**
@@ -26,6 +27,7 @@ This config has been updated to use OpenCore as Clover is dead.
  -  [x] **Sleep**  
  -  [x] **Keyboard**  
  -  [ ] **Touchpad**: in Pulling mode (*unstable*)
+ Model: Elan1200, GPIO PIN: `0x55`, due to Asus's buggy implementation of GPIO it *won't work* in Interrupt mode. GPIO Patches are included in `SSDT-GPI0.aml`. They won't work however. 
  -  [x] **LAN**  
  -  [x] **USB Ports** 
  -  [x] **WebCam** 
@@ -33,16 +35,17 @@ This config has been updated to use OpenCore as Clover is dead.
  -  [x] **Hardware Accelerated Video decoding** 
  -  [x] **Battery status**
  -  [x] **NVRAM**
+ -  [x] **Brightness Keys** (fn+f5/f6)
 
 ## Not Working/ Not tested
 
  - **Primary AR9565 Wifi Card** > replaced by Intel AC8260 as I couldn't find any of natively supported Cards here in iran. 
- - **Brightness Keys** 
+ - ~~**Brightness Keys**~~ 
  - **iMessage and Facetime**
  - **HDMI Output**
 
 To Do:
-1. Test touchpad in GPIO Mode
-2. Fix Brightness Keys (fn+f3/f4)
+1. ~~Test touchpad in GPIO Mode~~
+2. ~~Fix Brightness Keys (fn+f3/f4)~~ > use `BrightnessKeys.kext`
 3. Check HDMI Output and Fix if necessary
 4. iMessage and Facetime
