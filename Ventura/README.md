@@ -37,6 +37,7 @@ This config has been updated to use OpenCore as Clover is dead.
  -  [x] **NVRAM**
  -  [x] **Brightness Keys** (fn+f5/f6)
  -  [x] **HDMI Output** (video + audio)
+ -  [x] **iMessage and Facetime**
 
 ## Not Working/ Not tested
 
@@ -47,5 +48,5 @@ To Do:
 1. ~~Test touchpad in GPIO Mode~~
 2. ~~Fix Brightness Keys (fn+f3/f4)~~ > use `BrightnessKeys.kext`
 3. ~~Check HDMI Output and Fix if necessary~~
-4. iMessage and Facetime
+4. ~~iMessage and Facetime~~
 
