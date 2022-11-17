@@ -36,16 +36,16 @@ This config has been updated to use OpenCore as Clover is dead.
  -  [x] **Battery status**
  -  [x] **NVRAM**
  -  [x] **Brightness Keys** (fn+f5/f6)
+ -  [x] **HDMI Output** (video + audio)
 
 ## Not Working/ Not tested
 
  - **Primary AR9565 Wifi Card** > replaced by Intel AC8260 as I couldn't find any of natively supported Cards here in iran. 
- - ~~**Brightness Keys**~~ 
  - **iMessage and Facetime**
- - **HDMI Output**
 
 To Do:
 1. ~~Test touchpad in GPIO Mode~~
 2. ~~Fix Brightness Keys (fn+f3/f4)~~ > use `BrightnessKeys.kext`
-3. Check HDMI Output and Fix if necessary
+3. ~~Check HDMI Output and Fix if necessary~~
 4. iMessage and Facetime
+
