@@ -42,7 +42,6 @@ This config has been updated to use OpenCore as Clover is dead.
 ## Not Working/ Not tested
 
  - **Primary AR9565 Wifi Card** > replaced by Intel AC8260 as I couldn't find any of natively supported Cards here in iran. 
- - **iMessage and Facetime**
 
 To Do:
 1. ~~Test touchpad in GPIO Mode~~
