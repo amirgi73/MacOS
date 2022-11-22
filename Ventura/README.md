@@ -28,6 +28,7 @@ This config has been updated to use OpenCore as Clover is dead.
  -  [x] **Keyboard**  
  -  [ ] **Touchpad**: in Pulling mode (*unstable*)
  Model: Elan1200, GPIO PIN: `0x55`, due to Asus's buggy implementation of GPIO it *won't work* in Interrupt mode. GPIO Patches are included in `SSDT-GPI0.aml`. They won't work however. 
+ -  [x] **WiFi** : Intel- 8260NGW
  -  [x] **LAN**  
  -  [x] **USB Ports** 
  -  [x] **WebCam** 
