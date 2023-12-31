@@ -1,5 +1,6 @@
 # Update:
-[Ventura and OpenCore](https://github.com/amirgi73/MacOS/tree/master/Ventura)
+- [Sonoma and OpenCore](https://github.com/amirgi73/MacOS/tree/master/Sonoma)
+- [Ventura and OpenCore](https://github.com/amirgi73/MacOS/tree/master/Ventura)
 
 # MacOS - Mojave
 A repo containing Files, kests, etc for installing OSx on  Asus X542UQR.
