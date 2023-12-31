@@ -17,7 +17,7 @@ This config uses `MacBookPro15,2` as Platform-ID while the Previous MacBookPro14
  - [x] **CFG Lock disabled** (Patched with UEFI shell) > check `CFG_Lock.md` file. (This is defferent for every Machine, don't use my values! Extract yours instead: [Guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html))
  - [x] **Display Brightness**: (uses ACPI as WEG GPU Patches doesn't work here) > OP's `config.plist > DeviceProperties > Add > PciRoot(0x0)/Pci(0x14,0x0) > acpi-wake-type | data| <01>` 
  -  [x] **GPU firamebuffer**: (`AAPL,ig-platform-id=<00001B59>`, `force-online=<01000000>`)(no need to spoof `device-id` or inject `EDID`)  
- -  [x] **Audio**: Codec ALC294 :  AppleAlc's `layout-id=66` (Speakers + Mic + Headphone Jack (input + output + HDMI Audio)  
+ -  [x] **Audio**: Codec ALC294 :  AppleAlc's `layout-id=66` (Speakers + Mic + Headphone Jack (input + output) + HDMI Audio)  
  -  [x] **CPU Powermanagement**  
  -  [x] **Sleep**  
  -  [x] **Keyboard**  
